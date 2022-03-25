@@ -12,3 +12,4 @@ FUN-TB.py MTBseq_file.tab samples.txt 1000
 
 And as output, we get a CSV file, an input format for Cytoscape a network software where we can visualize and edit our resulting relationships.  The output format looks like this:
 
+We can find a [Beta version](https://colab.research.google.com/drive/1bttbnmZs682GMH_eq-J7EWxsvm6UBFRW?usp=sharing).
