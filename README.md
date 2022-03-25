@@ -2,6 +2,8 @@
 
 FUN-TB is a computational tool developed in Python, which objective is to compare several Mycobacterium Tuberculosis sequences against a reference. This tool contrasts the presence of variations at the gene level to find candidate genes and positions for first or second-line antibiotic resistance signatures.
 
+![alt text](https://github.com/ind-genomics/FUN-TB/blob/main/Images/FUN%20General.png)
+
 This tool takes as input three parameters. First, an MTBseq output tab file. Second, a list of samples in txt format that you want to compare and, finally, an integer number representing the number of top genes you want to get from the interest groups. To run this tool, you have to execute the following-like command:
 
 ```
