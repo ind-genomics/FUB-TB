@@ -31,4 +31,6 @@ Then, within the FUN-TB section, you have to choose the characteristics for each
 
 Finally, you need to set a total of the top genes (Integer number) you want to consider in the network structure, then run the cell of network construction and, that's it, you will have a preliminary image of your network.
 
-![alt text](https://github.com/ind-genomics/FUN-TB/blob/main/Images/Network2.png?raw=true)
+<p align="center">
+  <img src="https://github.com/ind-genomics/FUN-TB/blob/main/Images/Network2.png?raw=true" />
+</p>
