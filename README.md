@@ -1,6 +1,6 @@
 # FUN-TB
 
-FUN-TB is a Python-based standalone tool designed for the analysis of genetic variations in Mycobacterium tuberculosis research. It enables researchers and bioinformaticians to explore, visualize, and interpret genetic data, constructing phenotype-centric networks for insights into gene-phenotype relationships.
+*FUN-TB* is a python-based standalone tool for SNPs study comparisons among contrasting phenotypical sets of samples in order to highligth those genes that present alterations and see if they are proper for one or more groups. FunTB takes as input an MTBSeq output file and a CSV format clinical table information. The first script 
 
 ## Table of Contents
 
