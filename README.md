@@ -2,15 +2,6 @@
 
 *`FUN-TB`* is a freely available open-source Python standalone tool designed for analyzing MTBSeq v.1.0 output files. It facilitates the comparison of the presence of Single Nucleotide Polymorphisms (SNPs) among phenotypically diverse sets of Mycobacterium tuberculosis samples. FunTB is a command-line tool composed of three scripts: a) Variation dictionary creation, b) Phenotype-based samples lists generation, and c) Phenotype-centric and gene-surrounded networks structuration.
 
-
-
-
-
-
-
-
-for SNPs study comparisons among contrasting phenotypical sets of samples in order to highligth those genes that present alterations and see if they are proper for one or more groups. FunTB takes as input an MTBSeq output file and a CSV format clinical table information. The first script 
-
 ## Table of Contents
 
 - [Features](#features)
@@ -35,14 +26,13 @@ for SNPs study comparisons among contrasting phenotypical sets of samples in ord
 
 Ensure you have Python 3.x installed on your system. Install MyTool using pip:
 
-```bash
+bash
 pip install mytool
 
 This tool takes as input three parameters. First, an MTBseq output tab file. Second, a list of samples in txt format that you want to compare and, finally, an integer number representing the number of top genes you want to get from the interest groups. To run this tool, you have to execute the following-like command:
 
-```
 FUN-TB.py MTBseq_file.tab samples.txt 1000
-```
+
 
 And as output, we will get a CSV file, an input format for Cytoscape, a network software where we can visualize and edit our resulting genes' relationships. The output format looks like this:
 
@@ -66,3 +56,7 @@ Finally, you need to set a total of the top genes (Integer number) you want to c
 <p align="center">
   <img src="https://github.com/ind-genomics/FUN-TB/blob/main/Images/Network2.png?raw=true" />
 </p>
+
+## License
+
+*`FUN-TB`* is available under MIT License. See License.txt for more details.
