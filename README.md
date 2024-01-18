@@ -1,6 +1,15 @@
 # FUN-TB
 
-*`FUN-TB`* is a python-based standalone tool for SNPs study comparisons among contrasting phenotypical sets of samples in order to highligth those genes that present alterations and see if they are proper for one or more groups. FunTB takes as input an MTBSeq output file and a CSV format clinical table information. The first script 
+*`FUN-TB`* is a freely available open-source Python standalone tool designed for analyzing MTBSeq v.1.0 output files. It facilitates the comparison of the presence of Single Nucleotide Polymorphisms (SNPs) among phenotypically diverse sets of Mycobacterium tuberculosis samples. FunTB is a command-line tool composed of three scripts: a) Variation dictionary creation, b) Phenotype-based samples lists generation, and c) Phenotype-centric and gene-surrounded networks structuration.
+
+
+
+
+
+
+
+
+for SNPs study comparisons among contrasting phenotypical sets of samples in order to highligth those genes that present alterations and see if they are proper for one or more groups. FunTB takes as input an MTBSeq output file and a CSV format clinical table information. The first script 
 
 ## Table of Contents
 
