@@ -29,6 +29,8 @@ Ensure you have Python 3.x installed on your system. Install MyTool using pip:
 bash
 pip install mytool
 
+## Usage
+
 This tool takes as input three parameters. First, an MTBseq output tab file. Second, a list of samples in txt format that you want to compare and, finally, an integer number representing the number of top genes you want to get from the interest groups. To run this tool, you have to execute the following-like command:
 
 FUN-TB.py MTBseq_file.tab samples.txt 1000
