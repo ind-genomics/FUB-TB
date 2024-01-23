@@ -30,7 +30,7 @@ In summary, the script provides a comprehensive analysis of genetic variations, 
 ## Table of Contents
 
 - [Features](#features)
-- [Installation](#installation)
+- [Set Up](#Setup)
 - [Usage](#usage)
 - [Documentation](#documentation)
 - [Examples](#examples)
@@ -43,14 +43,11 @@ In summary, the script provides a comprehensive analysis of genetic variations, 
 
 - Analyze genetic variations related to tuberculosis.
 - Construct phenotype-centric networks based on genetic data.
-- Visualize and interpret complex relationships between genes and phenotypes.
+- Visualize and hypothesize complex relationships between genes and phenotypes.
 
-## Installation
+## Setup
 
-Ensure you have Python 3.x installed on your system. Install MyTool using pip:
-
-bash
-pip install mytool
+Ensure you have Python 3.x installed on your system. 
 
 ## Usage
 
