@@ -2,6 +2,24 @@
 
 *`FUN-TB`* is a freely available open-source Python standalone tool designed for analyzing MTBSeq v.1.0 output files. It facilitates the comparison of the presence of Single Nucleotide Polymorphisms (SNPs) among phenotypically diverse sets of Mycobacterium tuberculosis samples. FunTB is a command-line tool composed of three scripts: a) Variation dictionary creation, b) Phenotype-based samples lists generation, and c) Phenotype-centric and gene-surrounded networks structuration.
 
+## Variation dictionary creation script
+This script aims to create a Python dictionary object from an MTBSeq V.1.0 file. The dictionary summarizes the presence of SNPs, along with the position and frequency parameters of each altered gene per sample.
+
+<p align="center">
+  <img src="Images/Script_One.png" />
+</p>
+
+## Phenotype-based samples lists generation script
+This second script has the objective of
+
+<p align="center">
+  <img src="Images/Script_Two.png" />
+</p>
+
+<p align="center">
+  <img src="Images/Script_Three.png" />
+</p>
+
 ## Table of Contents
 
 - [Features](#features)
@@ -12,17 +30,7 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-<p align="center">
-  <img src="Images/Script_One.png" />
-</p>
 
-<p align="center">
-  <img src="Images/Script_Two.png" />
-</p>
-
-<p align="center">
-  <img src="Images/Script_Three.png" />
-</p>
 
 ## Features
 
