@@ -10,11 +10,13 @@ This script aims to create a Python dictionary object from an MTBSeq V.1.0 file.
 </p>
 
 ## Phenotype-based samples lists generation script
-This second script has the objective of
+This second script aims to generate a series of lists containing sample IDs. These lists are constructed such that samples within the same list share common phenotypical features and clinical values.
 
 <p align="center">
-  <img src="Images/Script_Two.png" />
+  <img src="Images/Script_Two.png"/>
 </p>
+
+## Phenotype-centric and gene-surrounded networks structuration script
 
 <p align="center">
   <img src="Images/Script_Three.png" />
