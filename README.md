@@ -95,29 +95,18 @@ And as output, we will get a series of TXT files, which will contain the ids of 
 
 ### Phenotype-centric and gene-surrounded networks structuration script
 
-The third script takes as input at least eigth parameters: First, a string that will define the network output file name, Second, a TXT file which determines the variation dictionary file name, third an integer that will determine the percentage of conserved genes going from 0 to 100, third the alpha value which will determine the weigth to ponderate the alteration density score contribution for CAIS, fourth is the beta :
-
-cais = alpha*(alteration_density_score) + beta*(dominant_altered_gene_score) + gamma*(custer_diversity_score)
-
-Network_name = sys.argv[1] # Name to sav the file
-Variations_dictionary_file = sys.argv[2] # Variation dictionary File (.txt)
-Parteto_frontiers = sys.argv[3] # Select top genes to show up within the network representation (integer)
-alpha = sys.argv[4] # Ponderation factor float -> [0-1]
-beta = sys.argv[5] # Ponderation factor float -> [0-1]
-gamma = sys.argv[6] # Ponderation factor float -> [0-1]
-Group_Lists = sys.argv[7:] # Groups list files (.txt)
+The third script requires a minimum of eight parameters as input. First, a string is needed to define the output file name for the network. Second, a TXT file is required to specify the variation dictionary file name. Third, an integer is needed to determine the percentage of conserved genes, ranging from 0 to 100. The fourth parameter is the alpha value, which determines the weight for ponderating the Alteration Density Score (ADS) contribution. The fifth parameter is the beta coefficient, responsible for regulating the contribution of the Dominant Altered Gene Score (DAGS). Following that, we have the gamma coefficient, which focuses on regulating the Cluster Diversity Score (CDAS). Each of these scores is then summed to calculate the Comprehensive Alteration Impact Score (CAIS), reflected in the node size. Finally, the last parameters are the names of files corresponding to lists of samples (at least two) from groups with contrasting phenotypical features. To run this script, you have to execute the following-like command:
 
 ```bash
-python FuNTB.py 
+python FuNTB.py Network_name Variation_dictionary_file Percentage_factor alpha_coefficient beta_coefficient gamma_coefficient Group_list_1 Group_list_2 ... Group_list_n
 ```
 
+The output generated are three XML-Network file formats (GraphML, GEXF, GML) an input format for Cytoscape, a network software where we can visualize and edit our resulting genes' relationships. The output format could be summarized in a table like this:
 
-an input format for Cytoscape, a network software where we can visualize and edit our resulting genes' relationships. The output format looks like this:
-
-| Source Node  |  Target Node   | Fitness Score | Edge Color | Node Size |
-|    :---:     |     :---:      |     :---:     |    :---:   |   :---:   |
-|     acee     |   Sensitive    |       7       |    blue    |     5     |
-|     rpoc     |   Resistant    |       3       |    green   |     2     |
+| Source Node  |  Target Node   | CAIS Score | Edge Color | Node Size | Edge Width |
+|    :---:     |     :---:      |  :---:     |    :---:   |   :---:   |     0.8    |
+|     acee     |   Sensitive    |    7       |    blue    |     5     |     1.0    |
+|     rpoc     |   Resistant    |    3       |    green   |     2     |     0.3    |
 
 Once you import the output file in Cytoscape, you can map the different networks' parameters and get the editable format to set some extra settings like node position and distribution, node group based on desired or similar characteristics.  Finally, save your final network image. The workflow of the data processing is as follows:
 
