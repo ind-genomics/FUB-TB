@@ -104,7 +104,7 @@ python FuNTB.py Network_name Variation_dictionary_file Percentage_factor alpha_c
 The output generated are three XML-Network file formats (GraphML, GEXF, GML) an input format for Cytoscape, a network software where we can visualize and edit our resulting genes' relationships. The output format could be summarized in a table like this:
 
 | Source Node  |  Target Node   | CAIS Score | Edge Color | Node Size | Edge Width |
-|    :---:     |     :---:      |  :---:     |    :---:   |   :---:   |     0.8    |
+|    :---:     |     :---:      |  :---:     |    :---:   |   :---:   |    :---:   |
 |     acee     |   Sensitive    |    7       |    blue    |     5     |     1.0    |
 |     rpoc     |   Resistant    |    3       |    green   |     2     |     0.3    |
 
