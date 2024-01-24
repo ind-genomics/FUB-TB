@@ -91,7 +91,7 @@ And as output, we will get a series of TXT files, which will contain the ids of 
 |      .      |
 |      .      |
 | sample id n |
-|     :---:   |
+|             |
 
 ### Phenotype-centric and gene-surrounded networks structuration script
 
