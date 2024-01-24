@@ -75,10 +75,6 @@ And as output, we will get a TXT file, with all summarized information about eac
       - variable position: frequency of variation
     - symbolic mutations
       - variation symbol: frequency of appearances
-  - Gene 2
-    - 
-    - 
-    - 
 
 
 And as output, we will get a CSV file, an input format for Cytoscape, a network software where we can visualize and edit our resulting genes' relationships. The output format looks like this:
