@@ -95,6 +95,23 @@ And as output, we will get a series of TXT files, which will contain the ids of 
 
 ### Phenotype-centric and gene-surrounded networks structuration script
 
+The third script takes as input at least eigth parameters: First, a string that will define the network output file name, Second, a TXT file which determines the variation dictionary file name, third an integer that will determine the percentage of conserved genes going from 0 to 100, third the alpha value which will determine the weigth to ponderate the alteration density score contribution for CAIS, fourth is the beta :
+
+cais = alpha*(alteration_density_score) + beta*(dominant_altered_gene_score) + gamma*(custer_diversity_score)
+
+Network_name = sys.argv[1] # Name to sav the file
+Variations_dictionary_file = sys.argv[2] # Variation dictionary File (.txt)
+Parteto_frontiers = sys.argv[3] # Select top genes to show up within the network representation (integer)
+alpha = sys.argv[4] # Ponderation factor float -> [0-1]
+beta = sys.argv[5] # Ponderation factor float -> [0-1]
+gamma = sys.argv[6] # Ponderation factor float -> [0-1]
+Group_Lists = sys.argv[7:] # Groups list files (.txt)
+
+```bash
+python FuNTB.py 
+```
+
+
 an input format for Cytoscape, a network software where we can visualize and edit our resulting genes' relationships. The output format looks like this:
 
 | Source Node  |  Target Node   | Fitness Score | Edge Color | Node Size |
