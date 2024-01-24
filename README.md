@@ -63,6 +63,20 @@ This first script takes as input three parameters: First, the MTBseq output file
 ```bash
 python FunTB_dictionary.py MTBseq_file.tab ClinicalData_table.csv Dictionary_Output_File_name
 ```
+And as output, we will get a TXT file, with all summarized information about each samples,. The output format looks like this:
+
+- Root
+  - Branch 1
+    - Sub-branch 1.1
+      - Leaf 1.1.1
+      - Leaf 1.1.2
+    - Sub-branch 1.2
+  - Branch 2
+    - Sub-branch 2.1
+      - Leaf 2.1.1
+    - Sub-branch 2.2
+      - Leaf 2.2.1
+
 
 And as output, we will get a CSV file, an input format for Cytoscape, a network software where we can visualize and edit our resulting genes' relationships. The output format looks like this:
 
