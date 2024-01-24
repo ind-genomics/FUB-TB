@@ -58,14 +58,12 @@ Ensure you have these or similar versions installed on your system.
 
 ### Variation dictionary creation script
 
-This first script takes as input three parameters: First, the MTBseq output file name and its direction. Second, Clinical data CSV file and finally, a string representing the name of the resulting file. To run this tool, you have to execute the following-like command:
+This first script takes as input three parameters: First, the MTBseq output file name and its direction. Second, Clinical data CSV file and finally, a string representing the name of the resulting file. To run this script, you have to execute the following-like command:
 
 ```bash
-python FunTB_dictionary.py MTBseq_file.tab ClinicalData_table.csv Dictionary_Output_File_name
+python FunTB_dictionary.py MTBseq_file.tab Clinical_Data.csv Dictionary_Output_File_name
 ```
 And as output, we will get a TXT file, with all summarized information about each samples,. The output format looks like this:
-
-{'total_variations': 1, 'variation_positions': {'245': 1}, 'symbolic_mutations': {'I245T': 1}
 
 - Sample 1
   - Gene 1
@@ -76,8 +74,25 @@ And as output, we will get a TXT file, with all summarized information about eac
     - symbolic mutations
       - variation symbol: frequency of appearances
 
+### Phenotype-based samples lists generation script
 
-And as output, we will get a CSV file, an input format for Cytoscape, a network software where we can visualize and edit our resulting genes' relationships. The output format looks like this:
+The second script takes as input one parameter: A Clinical data CSV file name, a string representing the name of the resulting file. To run this script, you have to execute the following-like command:
+
+```bash
+python Sample_Grouping__Creation.py Clinical_Data.csv
+```
+And as output, we will get a series of TXT files, which will contain the ids of samples that share common clinical values. The output format looks like this:
+
+- sample id 1
+- sample id 2
+- sample id 1
+- 
+- 
+- sample id n
+
+### Phenotype-centric and gene-surrounded networks structuration script
+
+an input format for Cytoscape, a network software where we can visualize and edit our resulting genes' relationships. The output format looks like this:
 
 | Source Node  |  Target Node   | Fitness Score | Edge Color | Node Size |
 |    :---:     |     :---:      |     :---:     |    :---:   |   :---:   |
@@ -86,8 +101,6 @@ And as output, we will get a CSV file, an input format for Cytoscape, a network 
 
 Once you import the output file in Cytoscape, you can map the different networks' parameters and get the editable format to set some extra settings like node position and distribution, node group based on desired or similar characteristics.  Finally, save your final network image. The workflow of the data processing is as follows:
 
-### Phenotype-based samples lists generation script
-### Phenotype-centric and gene-surrounded networks structuration script
 
 
 At the moment, you can find a [Beta version](https://colab.research.google.com/drive/1bttbnmZs682GMH_eq-J7EWxsvm6UBFRW?usp=sharing) implemented in Google Colab, where we have already pre-loaded some Mexican available sequences data and their corresponding metadata information (Geographical, Age, Sex, Comorbidities, Acquisition year, and Drug Resistance status). You can select from a list of options, the characteristics desired for each of the two groups you can compare and get a preliminary network image corresponding to the two groups of interest.
