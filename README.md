@@ -83,13 +83,13 @@ python Sample_Grouping__Creation.py Clinical_Data.csv
 ```
 And as output, we will get a series of TXT files, which will contain the ids of samples that share common clinical values. The output format looks like this:
 
-| #### sample id 1 |
-| #### sample id 2 |
-| #### sample id 3 |
-| .                |
-| .                |
-| .                |
-| #### sample id n |
+| sample id 1 |
+| sample id 2 |
+| sample id 3 |
+| .           |
+| .           |
+| .           |
+| sample id n |
 
 ### Phenotype-centric and gene-surrounded networks structuration script
 
