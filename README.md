@@ -82,8 +82,9 @@ The second script takes as input one parameter: A Clinical data CSV file name, a
 python Sample_Grouping__Creation.py Clinical_Data.csv
 ```
 And as output, we will get a series of TXT files, which will contain the ids of samples that share common clinical values. The output format looks like this:
-|     :---:   |
+
 | sample id 1 |
+|     :---:   |
 | sample id 2 |
 | sample id 3 |
 |      .      |
