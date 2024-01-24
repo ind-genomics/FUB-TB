@@ -65,17 +65,23 @@ python FunTB_dictionary.py MTBseq_file.tab ClinicalData_table.csv Dictionary_Out
 ```
 And as output, we will get a TXT file, with all summarized information about each samples,. The output format looks like this:
 
-- Root
-  - Branch 1
-    - Sub-branch 1.1
-      - Leaf 1.1.1
-      - Leaf 1.1.2
-    - Sub-branch 1.2
-  - Branch 2
-    - Sub-branch 2.1
-      - Leaf 2.1.1
-    - Sub-branch 2.2
-      - Leaf 2.2.1
+{'total_variations': 1, 'variation_positions': {'245': 1}, 'symbolic_mutations': {'I245T': 1}
+
+- Sample 1
+  - Gene 1
+    - Total variations
+      - integer representing number of alterations 
+    - variation positions
+      - variable position: frequency of variation
+    - symbolic mutations
+      - variation symbol: frequency of appearances
+  - Gene 2
+    - Total variations
+      - integer representing number of alterations 
+    - variation positions
+      - variable position: frequency of variation
+    - symbolic mutations
+      - variation symbol: frequency of appearances
 
 
 And as output, we will get a CSV file, an input format for Cytoscape, a network software where we can visualize and edit our resulting genes' relationships. The output format looks like this:
