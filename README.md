@@ -37,8 +37,6 @@ In summary, the script provides a comprehensive analysis of genetic variations, 
 - [Contributing](#contributing)
 - [License](#license)
 
-
-
 ## Features
 
 - Analyze genetic variations related to tuberculosis.
@@ -47,9 +45,15 @@ In summary, the script provides a comprehensive analysis of genetic variations, 
 
 ## Setup
 
-Ensure you have 
-Python 3.11.5 installed on your system. 
-Pandas 2.0.2
+Ensure you have these or similar versions installed on your system. 
+- Python: 3.11.5
+- Pandas: 2.0.2
+- Numpy: 1.24.3
+- Matplotlib: 3.7.1
+- Networkx: 3.1
+- Seaborn: 0.13.0
+- 
+
 ## Usage
 
 This tool takes as input three parameters. First, an MTBseq output tab file. Second, a list of samples in txt format that you want to compare and, finally, an integer number representing the number of top genes you want to get from the interest groups. To run this tool, you have to execute the following-like command:
