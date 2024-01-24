@@ -58,12 +58,11 @@ Ensure you have these or similar versions installed on your system.
 
 ### Variation dictionary creation script
 
-This tool takes as input three parameters. First, an MTBseq output tab file. Second, a list of samples in txt format that you want to compare and, finally, an integer number representing the number of top genes you want to get from the interest groups. To run this tool, you have to execute the following-like command:
+This first script takes as input three parameters: First, the MTBseq output file name and its direction. Second, Clinical data CSV file and finally, a string representing the name of the resulting file. To run this tool, you have to execute the following-like command:
 
 ```bash
-FUN-TB.py MTBseq_file.tab samples.txt 1000
+python FunTB_dictionary.py MTBseq_file.tab ClinicalData_table.csv Dictionary_Output_File_name
 ```
-
 
 And as output, we will get a CSV file, an input format for Cytoscape, a network software where we can visualize and edit our resulting genes' relationships. The output format looks like this:
 
