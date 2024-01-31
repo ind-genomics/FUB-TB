@@ -24,6 +24,22 @@ Please feel free to post on **Issues** or contact axel.ramos3737@gmail.com
 [Linux](https://www.python.org/ftp/python/3.11.5/Python-3.11.5.tgz)
 [macOS](https://www.python.org/ftp/python/3.11.5/python-3.11.5-macos11.pkg)
 
+##### Install Pandas 2.0.2
+```bash
+# Pip: Run pip install pandas==<version>
+pip install pandas==2.0.2
+```
+```bash
+# Anaconda: Run conda install pandas=<version>
+conda install pandas=2.0.2
+```
+
+##### Install 
+##### Install 
+##### Install 
+##### Install 
+##### Install 
+
 
 # Install Mamba package manager (faster!)
 conda install mamba -n base -c conda-forge
