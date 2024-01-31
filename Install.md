@@ -18,29 +18,15 @@ Please feel free to post on **Issues** or contact axel.ramos3737@gmail.com
 
 ### 1.1 Install dependencies
 
-##### Install Python 3.11.5
+##### Install Python v.3.11.5
 
-[Python - Windows](https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe) v.3.11.5
+[Windows](https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe)
+[Linux](https://www.python.org/ftp/python/3.11.5/Python-3.11.5.tgz)
+[macOS](https://www.python.org/ftp/python/3.11.5/python-3.11.5-macos11.pkg)
+
 
 # Install Mamba package manager (faster!)
 conda install mamba -n base -c conda-forge
 
-# Create FunGAP environment and install dependencies using Mamba
-conda create -y -n fungap
-conda activate fungap
-mamba install \
-  braker2=2.1.5 trinity=2.12.0 repeatmodeler=2.0.1 hisat2=2.2.1 pfam_scan=1.6 busco=5.1.2 \
-  -c bioconda -c conda-forge
-
-# Install Python and Perl modules (within fungap environment)
-pip install biopython bcbio-gff markdown2 matplotlib
-cpanm YAML Hash::Merge Logger::Simple Parallel::ForkManager MCE::Mutex Thread::Queue threads
-
-# Install Maker using Mamba (Maker installation is conflict with Busco)
-conda deactivate
-conda create -y -n maker
-conda activate maker
-mamba install maker=3.01.03 -c bioconda -c conda-forge
-```
 
  
