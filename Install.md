@@ -20,11 +20,9 @@ Please feel free to post on **Issues** or contact axel.ramos3737@gmail.com
 
 ##### Install Python v.3.11.5
 
-* [Windows](https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe)
-
-* [Linux](https://www.python.org/ftp/python/3.11.5/Python-3.11.5.tgz)
-
-* [macOS](https://www.python.org/ftp/python/3.11.5/python-3.11.5-macos11.pkg)
+[Windows](https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe)
+[Linux](https://www.python.org/ftp/python/3.11.5/Python-3.11.5.tgz)
+[macOS](https://www.python.org/ftp/python/3.11.5/python-3.11.5-macos11.pkg)
 
 
 # Install Mamba package manager (faster!)
