@@ -77,10 +77,13 @@ pip3 install seaborn
 conda install conda-forge::seaborn
 ```
 ##### Scipy 1.11.1
-
-
-# Install Mamba package manager (faster!)
-conda install mamba -n base -c conda-forge
-
+```bash 
+# Pip: Run python -m  pip install scipy
+python -m pip install scipy
+```
+```bash
+# Anaconda: Run conda install scipy
+conda install scipy
+```
 
  
