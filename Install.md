@@ -18,10 +18,9 @@ Please feel free to post on **Issues** or contact axel.ramos3737@gmail.com
 
 ### 1.1 Install dependencies
 
-```bash
-# Install Python 3.11.5
-```
-[Python (windows)](https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe) v.3.11.5
+##### Install Python 3.11.5
+
+[Python - Windows](https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe) v.3.11.5
 
 # Install Mamba package manager (faster!)
 conda install mamba -n base -c conda-forge
