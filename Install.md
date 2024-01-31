@@ -95,3 +95,21 @@ export FunTB_DIR=$(realpath FunTB/)
 # You can put this export command in the your .bashrc file
 # so that you don't need to type every time you run the FunTB
 ```
+
+## Test run
+
+Run FunTB scripts with test dataset
+
+```bash
+conda activate fungap  # if you didn't do it already
+$FUNGAP_DIR/fungap.py \
+  --genome_assembly GCF_000146045.2_R64_genomic.fna \
+  --trans_read_1 SRR1198667_1.fastq \
+  --trans_read_2 SRR1198667_2.fastq \
+  --augustus_species saccharomyces_cerevisiae_S288C \
+  --busco_dataset ascomycota_odb10 \
+  --sister_proteome prot_db.faa \
+  --num_cores 8
+  ```
+  
+The FunGAP predicted ~5500 genes in my test run (`fungap_out/fungap_out` output directory). It took about 8 hours by Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz with 8 CPU cores.
