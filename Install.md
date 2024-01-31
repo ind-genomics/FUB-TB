@@ -6,7 +6,7 @@ FunTB is an open source standalone tool available for academic purposes. For com
 
 Please feel free to post on **Issues** or contact axel.ramos3737@gmail.com
 
-## 1.- FunTB requirements
+## 1. FunTB requirements
 
  * Python: 3.11.5
  * Pandas: 2.0.2
@@ -84,5 +84,14 @@ python -m pip install scipy
 # Anaconda: Run conda install scipy
 conda install scipy
 ```
+## 2. Download FunTB
 
- 
+Use GitHub clone to download
+
+```bash
+cd $HOME  # or wherever you want
+git clone https://github.com/ind-genomics/FUN-TB.git
+export FunTB_DIR=$(realpath FunTB/)
+# You can put this export command in the your .bashrc file
+# so that you don't need to type every time you run the FunTB
+```
