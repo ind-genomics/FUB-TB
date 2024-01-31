@@ -45,8 +45,7 @@ conda install numpy = 1.24.3
 
 > [!Note]
 > If you have already installed a specific version of NumPy and want to install another version, use "--force-reinstall" e.g., "pip install -- force-reinstall numpy == version".
-
-> [!Note]
+> 
 > if you have a virtual env and want to override the installation without uninstalling, use "--ignore-installed", e.g., "pip install --ignore-installed numpy == version".
 
 ##### Matplotlib 3.7.1
