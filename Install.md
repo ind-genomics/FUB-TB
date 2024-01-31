@@ -18,27 +18,40 @@ Please feel free to post on **Issues** or contact axel.ramos3737@gmail.com
 
 ### 1.1 Install dependencies
 
-##### Install Python v.3.11.5
+##### Python v.3.11.5
 
 [Windows](https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe)
 [Linux](https://www.python.org/ftp/python/3.11.5/Python-3.11.5.tgz)
 [macOS](https://www.python.org/ftp/python/3.11.5/python-3.11.5-macos11.pkg)
 
-##### Install Pandas 2.0.2
+##### Pandas 2.0.2
 ```bash
-# Pip: Run pip install pandas==<version>
-pip install pandas==2.0.2
+# Pip: Run pip install pandas == <version>
+pip install pandas == 2.0.2
 ```
 ```bash
-# Anaconda: Run conda install pandas=<version>
-conda install pandas=2.0.2
+# Anaconda: Run conda install pandas = <version>
+conda install pandas = 2.0.2
+```
+##### Numpy 1.24.3
+```bash 
+# Pip: Run pip install numpy == <version>
+pip install numpy == 1.24.3
+```
+```bash
+# Anaconda: Run conda install numpy = <version>
+conda install numpy = 1.24.3
 ```
 
-##### Install 
-##### Install 
-##### Install 
-##### Install 
-##### Install 
+> [!Note]
+> If you have already installed a specific version of NumPy and want to install another version, use "--force-reinstall" e.g., "pip install -- force-reinstall numpy==1.23.5". 
+
+> If you have a virtual env and want to override the installation without uninstalling, use "--ignore-installed", e.g., "pip install --ignore-installed numpy==1.23.5".
+
+##### Matplotlib 3.7.1
+##### Networkx 3.1 
+##### Seaborn 0.13.0
+##### Scipy 1.11.1
 
 
 # Install Mamba package manager (faster!)
