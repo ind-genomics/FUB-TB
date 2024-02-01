@@ -100,6 +100,26 @@ export FunTB_DIR=$(realpath FunTB/)
 
 Run FunTB scripts with test dataset
 
+#### Variation dictionary creation script
+
+Once located within the FunTB directory the first step is to generate the variation dictionary file from MTBSeq V.0.1 output, in order to do this, run the following command:
+```bash
+python FunTB_dictionary.py MTBSeq_HIV_Data.tab Clinical_Data_HIV.csv
+```
+After the execution of this script a TXT file will be generated in the *`Variations_dictionaries`* which will contain the information of every sample and those genes that present any alteration.
+
+#### Phenotype-based samples lists generation script
+
+Then to generate the samples' lists, run the following command:
+```bash
+python Sample_Grouping_Creation.py Clinical_Data_HIV.csv
+```
+The execution of this script will generate a series of TXTs files which will contain the samples of each of the groups with common shared clinical features.
+
+#### Phenotype-centric and gene-surrounded networks structuration script
+
+
+
 ```bash
 conda activate fungap  # if you didn't do it already
 $FUNGAP_DIR/fungap.py \
