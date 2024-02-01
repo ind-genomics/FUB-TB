@@ -118,18 +118,10 @@ The execution of this script will generate a series of TXTs files which will con
 
 #### Phenotype-centric and gene-surrounded networks structuration script
 
-
-
+Finally, to generate the network files, run the following command:
 ```bash
-conda activate fungap  # if you didn't do it already
-$FUNGAP_DIR/fungap.py \
-  --genome_assembly GCF_000146045.2_R64_genomic.fna \
-  --trans_read_1 SRR1198667_1.fastq \
-  --trans_read_2 SRR1198667_2.fastq \
-  --augustus_species saccharomyces_cerevisiae_S288C \
-  --busco_dataset ascomycota_odb10 \
-  --sister_proteome prot_db.faa \
-  --num_cores 8
-  ```
-  
-The FunGAP predicted ~5500 genes in my test run (`fungap_out/fungap_out` output directory). It took about 8 hours by Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz with 8 CPU cores.
+python FunTB.py VIH_network MTBSeq_HIV_Data.txt 30 0.2 0.1 0.7 VIH_positive_Samples.txt VIH_negative_Samples.txt
+```
+This will generate three XML-network format files which you can find within the Networks_files directory.
+
+The FunTB full analysis took about 5 minutes by Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz with 8 CPU cores.
