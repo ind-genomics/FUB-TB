@@ -6,12 +6,19 @@
 
 # Usage of FunTB
 
-* [0. Prerequisites](#prerequisites)
-* [1. Preparing clinical database](#protdb)
-* [2. Augustus species model](#augustusgenemodel)
-* [3. Running FunTB scripts](#runningfungap)
-* [4. FunGAP output](#output)
-* [5. After FunGAP](#afterfungap)
+* [1. Prerequisites](#prerequisites)
+* [2. Preparing clinical database](#predb)
+* [3. Running FunTB scripts](#runningfuntb)
+* [4. FunTB output](#output)
+* [5. After FunTB](#afterfuntb)
 
 <a name="prerequisites"></a>
-## 0. Prerequisites
+## 1. Prerequisites
+<a name="predb"></a>
+## 2. Preparing clinical database
+<a name="runningfuntb"></a>
+## 3. Running FunTB scripts
+<a name="output"></a>
+## 4. FunTB output
+<a name="afterfuntb"></a>
+## 5. After FunTB
