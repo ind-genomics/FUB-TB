@@ -16,12 +16,17 @@
 ## 1. Prerequisites
 
 To run FunTB, users need two main files.
-- MTBSeq v.1.0.1 output file
-- CSV Clinical data file
+- MTBSeq v.1.0.1 output file (tab)
+- Clinical data file (csv)
 
 <a name="predb"></a>
 ## 2. Preparing clinical data table
+FunTB requires `Clinical data table` in CSV format file. We recommended to structure it in the following manner:
 
+Samples iDs   | Clinical Variable 1 | Clinical Variable 2 |
+------------- | ------------------- | ------------------- |
+Sample iD 1   |     CV1 Value 1     |     CV2 Value 1     |
+Sample iD 2   |     CV1 Value 2     |     CV2 Value 2     |
 
 
 <a name="runningfuntb"></a>
