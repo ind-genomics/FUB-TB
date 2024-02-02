@@ -25,8 +25,8 @@ FunTB requires `Clinical data table` in CSV format file. We recommended to struc
 
 Samples iDs   | Clinical Variable 1 | Clinical Variable 2 |
 ------------- | ------------------- | ------------------- |
-Sample iD 1   |     CV1 Value 1     |     CV2 Value 1     |
-Sample iD 2   |     CV1 Value 2     |     CV2 Value 2     |
+Sample iD 1   |     cv1 Value 1     |     cv2 Value 1     |
+Sample iD 2   |     cv1 Value 2     |     cv2 Value 2     |
 
 
 <a name="runningfuntb"></a>
