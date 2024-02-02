@@ -4,4 +4,14 @@
 
 *`FUN-TB`* is a freely available open-source Python standalone tool designed for analyzing MTBSeq v.1.0 output files. It facilitates the comparison of the presence of Single Nucleotide Polymorphisms (SNPs) among phenotypically diverse sets of Mycobacterium tuberculosis samples through a Phenotypic centred networks structuration, making able to observe which altered genes and based on the node size and edge width in which proportion they are related to each phenotype.
 
+# Usage of FunTB
 
+* [0. Prerequisites](#prerequisites)
+* [1. Preparing clinical database](#protdb)
+* [2. Augustus species model](#augustusgenemodel)
+* [3. Running FunTB scripts](#runningfungap)
+* [4. FunGAP output](#output)
+* [5. After FunGAP](#afterfungap)
+
+<a name="prerequisites"></a>
+## 0. Prerequisites
