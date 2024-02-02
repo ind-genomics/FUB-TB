@@ -28,9 +28,9 @@ Samples iDs   | Clinical variable 1 | Clinical variable 2 |
 Sample iD 1   |     cv1 value 1     |     cv2 value 1     |
 Sample iD 2   |     cv1 value 2     |     cv2 value 2     |
 Sample iD 3   |     cv1 value 3     |     cv2 value 3     |
-   $\.$       |                     |                     |
-   $\.$       |                     |                     |
-   $\.$       |                     |                     |
+   $\.$       |         $\.$        |         $\.$        |
+   $\.$       |         $\.$        |         $\.$        |
+   $\.$       |         $\.$        |         $\.$        |
 Sample iD n   |     cv1 value n     |     cv2 value n     |
 
 
