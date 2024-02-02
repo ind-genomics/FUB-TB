@@ -36,8 +36,13 @@ Sample iD n   |     cv1 value n     |     cv2 value n     |
 
 <a name="runningfuntb"></a>
 ## 3. Running FunTB scripts
+Once within FunTB directory, where you could see the following content:
 
+#### Direc
+- Seven directories ()
+- Six Python scripts
 
+#### 
 
 <a name="output"></a>
 ## 4. FunTB output
