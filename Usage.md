@@ -23,10 +23,10 @@ To run FunTB, users need two main files.
 ## 2. Preparing clinical data table
 FunTB requires `Clinical data table` in CSV format file. We recommended to structure it in the following manner:
 
-Samples iDs   | Clinical Variable 1 | Clinical Variable 2 |
+Samples iDs   | Clinical variable 1 | Clinical variable 2 |
 ------------- | ------------------- | ------------------- |
-Sample iD 1   |     cv1 Value 1     |     cv2 Value 1     |
-Sample iD 2   |     cv1 Value 2     |     cv2 Value 2     |
+Sample iD 1   |     cv1 value 1     |     cv2 value 1     |
+Sample iD 2   |     cv1 value 2     |     cv2 value 2     |
 
 
 <a name="runningfuntb"></a>
