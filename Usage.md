@@ -38,9 +38,30 @@ Sample iD n   |     cv1 value n     |     cv2 value n     |
 ## 3. Running FunTB scripts
 Once within FunTB directory, where you could see the following content:
 
-#### Direc
-- Seven directories ()
+#### Directory content
+- Seven subdirectories
+  - MTBSeq_files
+  - Metadata_files (Clinical data tables)
+  - Networks_files
+  - Pareto_Front_Data
+  - Sample_lists_files
+  - Pareto_Front_Data
 - Six Python scripts
+  - FunTB.py (main script tool)
+  - FunTB_dictionary.py
+  - Sample_Grouping_Creation.py
+  - NetworkDataGeneration.py
+  - NetworkStructureGeneration.py
+  - ParetoFrontExtraction.py
+
+The first script to be executed is the `FunTB_dactionary.py` which takes for input the MTBSeq file. Running the follwing command:
+
+```
+python $FunTB_DIR/FunTB_dictionary.py \
+  --MTBSeq_file <MTBSeq_file_name> \
+  --Clinical_data_file <Clinical_data_file_name> \
+  --Dictionary_file_name <Output_file_name>
+```
 
 #### 
 
