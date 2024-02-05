@@ -1,6 +1,6 @@
 # FunTB: Functional Network of variants in TB genomes pipeline v.1.0.1
 
-**Last updated: Feb 2, 2024**
+**Last updated: Feb 4, 2024**
 
 *`FUN-TB`* is a freely available open-source Python standalone tool designed for analyzing MTBSeq v.1.0 output files. It facilitates the comparison of the presence of Single Nucleotide Polymorphisms (SNPs) among phenotypically diverse sets of Mycobacterium tuberculosis samples through a Phenotypic centred networks structuration, making able to observe which altered genes and based on the node size and edge width in which proportion they are related to each phenotype.
 
@@ -74,30 +74,29 @@ Finally, the third script is to generate series of XML-network format files,
 
 ```
 python $FunTB_DIR/FuNTB.py  Clinical_Data.csv \
-  --Network_name <Clinical_data_file_name> \
-  --Variation_dictionary_file <Clinical_data_file_name> \
-  --Percentage_factor_integer <Clinical_data_file_name> \
-  --alpha_coefficient <Clinical_data_file_name> \
-  --beta_coefficient <Clinical_data_file_name> \
-  --gamma_coefficient <Clinical_data_file_name> \
-  --Group_list_1 <Clinical_data_file_name> \
-  --Group_list_1 <Clinical_data_file_name> \
+  --Network_name <Output_file_name> \
+  --Variation_dictionary_file <Alteration_dictionary_file> \
+  --Percentage_factor_integer <Remaining_genes_factor> \
+  --alpha_coefficient <Coefficient_to_pondered_sum> \
+  --beta_coefficient <Coefficient_to_pondered_sum> \
+  --gamma_coefficient <Coefficient_to_pondered_sum> \
+  --Group_list_1 <Samples_Ids_List_TXT_file> \
+  --Group_list_1 <Samples_Ids_List_TXT_file> \
    .
    .
    .
-  --Group_list_n <Clinical_data_file_name>
+  --Group_list_n <Samples_Ids_List_TXT_file>
 ```
-
-python FuNTB.py Network_name Variation_dictionary_file Percentage_factor alpha_coefficient beta_coefficient gamma_coefficient Group_list_1 Group_list_2 ... Group_list_n
-
-#### 
-
 <a name="output"></a>
 ## 4. FunTB output
 
+Final output will be located in `Networks_files` directory.
 
+- Network_name.graphml
+- Network_name.gml
+- Network_name.gexf
 
 <a name="afterfuntb"></a>
 ## 5. After FunTB
 
-
+The output files are post-processed in Cytoscape, to get a final network visualization like the following one:
