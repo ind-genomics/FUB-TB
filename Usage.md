@@ -63,6 +63,33 @@ python $FunTB_DIR/FunTB_dictionary.py \
   --Dictionary_file_name <Output_file_name>
 ```
 
+The second script in the pipeline is to execute the `Sample_Grouping_Creation.py` which takes as input a CSV file that contains clinical data separated in columns.
+
+```
+python $FunTB_DIR/Sample_Grouping__Creation.py  Clinical_Data.csv \
+  --Clinical_data_file <Clinical_data_file_name> \
+```
+
+Finally, the third script is to generate series of XML-network format files, 
+
+```
+python $FunTB_DIR/FuNTB.py  Clinical_Data.csv \
+  --Network_name <Clinical_data_file_name> \
+  --Variation_dictionary_file <Clinical_data_file_name> \
+  --Percentage_factor_integer <Clinical_data_file_name> \
+  --alpha_coefficient <Clinical_data_file_name> \
+  --beta_coefficient <Clinical_data_file_name> \
+  --gamma_coefficient <Clinical_data_file_name> \
+  --Group_list_1 <Clinical_data_file_name> \
+  --Group_list_1 <Clinical_data_file_name> \
+   .
+   .
+   .
+  --Group_list_n <Clinical_data_file_name>
+```
+
+python FuNTB.py Network_name Variation_dictionary_file Percentage_factor alpha_coefficient beta_coefficient gamma_coefficient Group_list_1 Group_list_2 ... Group_list_n
+
 #### 
 
 <a name="output"></a>
